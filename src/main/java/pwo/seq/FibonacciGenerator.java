@@ -12,7 +12,6 @@ public class FibonacciGenerator extends Generator {
 
     @Override
     public void reset() {
-        super.reset();
         current = new BigDecimal(0);
         f_1 = new BigDecimal(1);
         f_2 = new BigDecimal(0);
@@ -32,6 +31,8 @@ public class FibonacciGenerator extends Generator {
         }
 
         lastIndex++;
+
+
         return current;
     }
 }
